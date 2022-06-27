@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082F9F44286A02F400F91799 /* TeamPlayerSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F9F42286A02F400F91799 /* TeamPlayerSearchRequest.swift */; };
+		082F9F45286A02F400F91799 /* TeamPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F9F43286A02F400F91799 /* TeamPlayer.swift */; };
+		082F9F49286A030200F91799 /* UserDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F9F47286A030200F91799 /* UserDetailService.swift */; };
+		082F9F4A286A030200F91799 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F9F48286A030200F91799 /* BaseService.swift */; };
 		0881C2702857CF2500283917 /* SimpleCoordinatorPatternApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881C26F2857CF2500283917 /* SimpleCoordinatorPatternApp.swift */; };
 		0881C2742857CF2900283917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0881C2732857CF2900283917 /* Assets.xcassets */; };
 		0881C2772857CF2900283917 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0881C2762857CF2900283917 /* Preview Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		082F9F42286A02F400F91799 /* TeamPlayerSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPlayerSearchRequest.swift; sourceTree = "<group>"; };
+		082F9F43286A02F400F91799 /* TeamPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPlayer.swift; sourceTree = "<group>"; };
+		082F9F47286A030200F91799 /* UserDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailService.swift; sourceTree = "<group>"; };
+		082F9F48286A030200F91799 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		0881C26C2857CF2500283917 /* SimpleCoordinatorPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCoordinatorPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0881C26F2857CF2500283917 /* SimpleCoordinatorPatternApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoordinatorPatternApp.swift; sourceTree = "<group>"; };
 		0881C2732857CF2900283917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082F9F41286A02F400F91799 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				082F9F42286A02F400F91799 /* TeamPlayerSearchRequest.swift */,
+				082F9F43286A02F400F91799 /* TeamPlayer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		082F9F46286A030200F91799 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				082F9F47286A030200F91799 /* UserDetailService.swift */,
+				082F9F48286A030200F91799 /* BaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		0881C2632857CF2500283917 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				0881C26F2857CF2500283917 /* SimpleCoordinatorPatternApp.swift */,
+				082F9F41286A02F400F91799 /* Model */,
+				082F9F46286A030200F91799 /* Service */,
 				0881C27D2857CF5000283917 /* Main */,
 				0881C2822857CF5C00283917 /* First */,
 				0881C2862857CF5C00283917 /* Second */,
@@ -186,15 +214,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0881C28D2857CF5C00283917 /* SecondView.swift in Sources */,
+				082F9F49286A030200F91799 /* UserDetailService.swift in Sources */,
 				0881C28E2857CF5C00283917 /* SecondCoordinatorView.swift in Sources */,
 				0881C28F2857CF5C00283917 /* SecondCoordinator.swift in Sources */,
+				082F9F4A286A030200F91799 /* BaseService.swift in Sources */,
 				0881C28A2857CF5C00283917 /* FirstCoordinatorView.swift in Sources */,
 				0881C28C2857CF5C00283917 /* FirstCoordinator.swift in Sources */,
 				0881C28B2857CF5C00283917 /* FirstView.swift in Sources */,
+				082F9F44286A02F400F91799 /* TeamPlayerSearchRequest.swift in Sources */,
 				0881C2912857CF7B00283917 /* View+Navigation.swift in Sources */,
 				0881C2802857CF5000283917 /* MainCoordinatorView.swift in Sources */,
 				0881C2812857CF5000283917 /* MainCoordinator.swift in Sources */,
 				0881C2702857CF2500283917 /* SimpleCoordinatorPatternApp.swift in Sources */,
+				082F9F45286A02F400F91799 /* TeamPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

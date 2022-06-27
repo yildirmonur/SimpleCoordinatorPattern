@@ -17,7 +17,7 @@ final class FirstCoordinator: ObservableObject, Identifiable {
     
     init(parent: MainCoordinator?) {
         self.parent = parent
-        self.viewModel = FirstViewModel(coordinator: self)
+        self.viewModel = FirstViewModel(coordinator: self, searchService: TeamPlayerSearchService())
     }
     
     func openSecond() {
