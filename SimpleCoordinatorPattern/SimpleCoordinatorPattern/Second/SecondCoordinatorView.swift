@@ -17,6 +17,16 @@ struct SecondCoordinatorView: View {
     
     var body: some View {
         SecondView(viewModel: coordinator.viewModel)
+            .if(coordinator.isTabbarHidden) { view in
+                view.toolbar(.hidden, for: .tabBar)
+            }
+            .if(!coordinator.isTabbarHidden) { view in
+                view.toolbar(.visible, for: .tabBar)
+            }
+            .onDisappear {
+                coordinator.isTabbarHidden = false
+            }
+            .animation(.spring(), value: coordinator.isTabbarHidden)
     }
 }
 

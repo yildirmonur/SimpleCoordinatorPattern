@@ -10,12 +10,14 @@ import SwiftUI
 @MainActor
 final class SecondCoordinator: ObservableObject, Identifiable {
     
+    @Published var isTabbarHidden: Bool
     @Published var viewModel: SecondViewModel!
     
     private unowned let parent: MainCoordinator?
     
-    init(parent: MainCoordinator?, willChangeTabTo: MainTab) {
+    init(parent: MainCoordinator?, isTabbarHidden: Bool, willChangeTabTo: MainTab) {
         self.parent = parent
+        self.isTabbarHidden = isTabbarHidden
         self.viewModel = SecondViewModel(coordinator: self, willChangeTabTo: willChangeTabTo)
     }
     

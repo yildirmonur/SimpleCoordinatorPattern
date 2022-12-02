@@ -21,7 +21,7 @@ final class FirstCoordinator: ObservableObject, Identifiable {
     }
     
     func openSecond() {
-        secondCoordinator = SecondCoordinator(parent: parent, willChangeTabTo: .second)
+        secondCoordinator = SecondCoordinator(parent: parent, isTabbarHidden: true, willChangeTabTo: .second)
     }
 }
 

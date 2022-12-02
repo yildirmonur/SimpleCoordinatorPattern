@@ -25,6 +25,6 @@ class MainCoordinator: ObservableObject {
     
     init() {
         firstCoordinator = .init(parent: self)
-        secondCoordinator = .init(parent: self, willChangeTabTo: .first)
+        secondCoordinator = .init(parent: self, isTabbarHidden: false, willChangeTabTo: .first)
     }
 }
