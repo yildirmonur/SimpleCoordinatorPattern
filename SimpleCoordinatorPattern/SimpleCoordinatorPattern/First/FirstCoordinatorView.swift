@@ -21,6 +21,7 @@ struct FirstCoordinatorView: View {
                 .navigation(item: $coordinator.secondCoordinator) { coordinator in
                     SecondCoordinatorView(coordinator: coordinator)
                 }
+                .hideTabbar(shouldHideTabbar: false)
         }
         .alert(item: $coordinator.alertItem) {
             Alert(title: $0.title, message: $0.message, dismissButton: $0.dismissButton)

@@ -16,4 +16,12 @@ extension View {
             self
         }
     }
+    
+    func onWill(disAppear: @escaping () -> Void, appear: @escaping () -> Void) -> some View {
+        self.modifier(WillDisappearModifier(disAppear: disAppear, appear: appear))
+    }
+    
+    func hideTabbar(shouldHideTabbar: Bool) -> some View {
+        self.modifier(HideTabbarModifier(shouldHideTabbar: shouldHideTabbar))
+    }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 @MainActor
 final class SecondCoordinator: ObservableObject, Identifiable {
     
-    @Published var isTabbarHidden: Bool
+    var isTabbarHidden: Bool
     @Published var viewModel: SecondViewModel!
     
     private unowned let parent: MainCoordinator?
